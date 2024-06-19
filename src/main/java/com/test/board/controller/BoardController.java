@@ -18,7 +18,7 @@ public class BoardController {
         this.boardService = boardService;
     }
 
-    @GetMapping("/")
+    @GetMapping("/JpaBoard")
     public String list(Model model) {
         List<BoardDto> boardDtoList = boardService.getBoardList();
         model.addAttribute("postList", boardDtoList);
