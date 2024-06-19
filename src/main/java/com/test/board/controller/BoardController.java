@@ -22,7 +22,7 @@ public class BoardController {
     public String list(Model model) {
         List<BoardDto> boardDtoList = boardService.getBoardList();
         model.addAttribute("postList", boardDtoList);
-        return "board/list.html";
+        return "board/index.html";
     }
 
     @GetMapping("/post")
